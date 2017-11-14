@@ -6,8 +6,6 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-
-
 use common\models\Tree;
 use common\models\TreeClass;
 use \common\models\MOrders;
@@ -91,6 +89,7 @@ class OrderController extends Controller {
     
     public function actionAdrlist()
     {
+        /* список адресов для выпадающего списка */
     $ids = $_POST['depdrop_parents'];
 
         $id = $ids[0];
